@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Lista de tarefas</title>
+</head>
+
+<body>
+    
+    
+    <main id="container">
+        
+        <aside id="bioContainer">
+
+            <img id="bioImg" src="./src/img/perfil.png" alt="icone de pessoa">
+            <h2> JOSEPH CLIMBER </h2>
+            <p> Palestrante, coach, campeão mundial de luta livre, telefonista, maestro, operador de máquina de moer cana e aspirante a programador </p>
+            
+
+            <ul id="linkContainer">
+                <li> <a href="https://www.youtube.com/watch?v=d88x4qZ_zKU&ab_channel=Henrique" target="_blank">Link 1</a></li>
+                <li> <a href="#">Link 2</a></li>
+                <li> <a href="#">Link 3</a></li>
+                <li> <a href="#">Link 4</a></li>
+            </ul>
+
+        </aside>
+     
+        <section id="listContainerDia">
+            
+        <h1 id="mainTitle">LISTA DE ATIVIDADES</h1>
+
+            <h1> DIA <img src="./src/img/sol.png" style="width: 45px;margin-top: .2em;" alt="icone sol"></h1>
+            <div class="container">
+                <div class="content">
+                    <div class="content--add-item">
+                        <input type="text" id="input-nova-tarefa-dia" placeholder="Digite sua nova tarefa">
+                        <button onclick="listaDia.novaTarefa()" id="btn-nova-tarefa-dia"
+                            title="Clique aqui para adicionar uma nova tarefa"> <img
+                                src="./src/img/adicionar.png" style="width: 0.8rem; " alt="icone mais"></button>
+                    </div>
+                    <div class="box tarefas">
+                        <div class="content--body">
+                            <ul id="list-item-dia">
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="listContainerNoite">
+            
+        <h1 id="mainTitle">LISTA DE ATIVIDADES</h1>
+
+            <h1> NOITE <img src="./src/img/lua-crescente.png" style="width: 45px;margin-top: .2em;"
+                    alt="icone lua crescente e estrelas"></h1>
+            <div class="container">
+                <div class="content">
+                    <div class="content--add-item">
+                        <input type="text" id="input-nova-tarefa-noite" placeholder="Digite sua nova tarefa">
+                        <button onclick="listaNoite.novaTarefa()" id="btn-nova-tarefa-noite"
+                            title="Clique aqui para adicionar uma nova tarefa"> <img
+                                src="./src/img/adicionar.png" style="width: 0.8rem; " alt="icone mais"></button>
+                    </div>
+                    <div class="box tarefas">
+                        <div class="content--body">
+                            <ul id="list-item-noite">
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="./src/script.js"></script>
+</body>
+
+</html>
