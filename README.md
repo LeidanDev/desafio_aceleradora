@@ -1,1 +1,1 @@
-Os 2 desafios estão inseridos em cada pasta.
+Desafio da galeria de fotos realizado para o processo seletivoda Aceleradora Ágil
